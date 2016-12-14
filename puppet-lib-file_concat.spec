@@ -32,7 +32,6 @@ find . \( -name spec -o -name ext \) | xargs rm -rf
 
 
 %install
-rm -rf %{buildroot}
 install -d -m 0755 %{buildroot}/%{_datadir}/openstack-puppet/modules/file_concat/
 cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/file_concat/
 
