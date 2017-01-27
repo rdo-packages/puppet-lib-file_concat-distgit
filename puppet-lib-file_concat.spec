@@ -4,7 +4,7 @@ Name:                   puppet-lib-file_concat
 Version:                1.0.1
 Release:                1%{?dist}
 Summary:                Library for concatenating multiple files into 1
-License:                Apache-2.0
+License:                ASL 2.0
 
 URL:                    https://github.com/electrical/puppet-lib-file_concat
 
