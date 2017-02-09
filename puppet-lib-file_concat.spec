@@ -1,14 +1,20 @@
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{!?upstream_version: %global upstream_version %{commit}}
+%define upstream_name puppet-lib-file_concat
+%global commit 813132b5d776204e1da169a93e4bc6a1e253f75c
+%global shortcommit %(c=%{commit}; echo ${c:0:7})
+# DO NOT REMOVE ALPHATAG
+%global alphatag .%{shortcommit}git
+
 
 Name:                   puppet-lib-file_concat
 Version:                1.0.1
-Release:                1%{?dist}
+Release:                1%{?alphatag}%{?dist}
 Summary:                Library for concatenating multiple files into 1
 License:                ASL 2.0
 
 URL:                    https://github.com/electrical/puppet-lib-file_concat
 
-Source0:                https://github.com/electrical/puppet-lib-file_concat/archive/%{version}.tar.gz
+Source0:                https://github.com/puppetlabs/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
 
 BuildArch:              noarch
 
@@ -42,5 +48,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/file_concat/
 
 
 %changelog
-* Tue Dec 13 2016 Alejandro Andreu <alejandroandreu@openmailbox.org> 1.0.1-1
-- Initial specfile
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 1.0.1-1.813132bgit
+- Ocata update 1.0.1 (813132b5d776204e1da169a93e4bc6a1e253f75c)
+
