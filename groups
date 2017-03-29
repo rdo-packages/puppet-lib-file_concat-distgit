@@ -1,5 +1,10 @@
-# UUID                                  	Group Name
-#
-32d27eb4db735088727469751bf9209ead646958	puppet/puppet-lib-file_concat-distgit-core
-cbd45b0b81c2895cd3b2e56b4c3d78e77ca72678	puppet/puppet-lib-file_concat-distgit-ptl
-global:Registered-Users                 	Registered Users
+# UUID Group Name
+global:Registered-Users	Registered Users
+fc7c2ee6bf2a7ad3540c5b812b4c144209607ca1	rdo-opm-core
+4572c517702492251ad622a289176552a8acbbb2	rdo-superusers
+global:Anonymous-Users	Anonymous Users
+9dfe85a637f904575f1df07f88cf81768ac38396	puppet/puppet-lib-file_concat-core
+05a678d3d4a168e149d5e8a0063bbd1b1c5526da	Administrators
+401cf37bee35d1c809d4d957e55f2a304f8eed69	rdo-provenpackagers
+6ddfecad023c6f4fa3ac8c4d2583c502ea675a73	Non-Interactive Users
+311a911ac12bd1ba9572b9bd80d4ba332b16940e	puppet/puppet-lib-file_concat-ptl
