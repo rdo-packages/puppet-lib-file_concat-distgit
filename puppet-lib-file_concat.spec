@@ -2,7 +2,7 @@
 
 Name:                   puppet-lib-file_concat
 Version:                1.0.1
-Release:                1%{?dist}
+Release:                2%{?alphatag}%{?dist}
 Summary:                Library for concatenating multiple files into 1
 License:                ASL 2.0
 
@@ -42,6 +42,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/file_concat/
 
 
 %changelog
+* Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 1.0.1-2.813132bgit
+- Update to post 1.0.1 (813132b5d776204e1da169a93e4bc6a1e253f75c)
+
 * Tue Dec 13 2016 Alejandro Andreu <alejandroandreu@openmailbox.org> 1.0.1-1
 - Initial specfile
 
