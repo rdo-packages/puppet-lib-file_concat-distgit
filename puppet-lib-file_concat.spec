@@ -45,3 +45,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/file_concat/
 * Tue Dec 13 2016 Alejandro Andreu <alejandroandreu@openmailbox.org> 1.0.1-1
 - Initial specfile
 
+
